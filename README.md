@@ -40,3 +40,15 @@ Depois é só ir para raíz do projeto e rodar
 ```bash
 docker-compose up --build
 ```
+Se quiser preencher o banco com um usuário e algumas entradas rode:
+
+```bash
+docker exec -it backend sh
+```
+E depois dentro do container rode: 
+
+```bash
+npm run seed
+```
+
+Vai criar um usuário com algumas informações e seu código de acesso será ILUMEO123
